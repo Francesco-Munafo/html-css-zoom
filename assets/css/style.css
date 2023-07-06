@@ -56,6 +56,9 @@ main {
     margin-left: 0.5rem;
 }
 
+.gap{
+    gap: 1.5rem;
+}
 /* #endregion Utilities */
 
 /* #region Debug */
@@ -138,22 +141,16 @@ footer {
 .foot-icon-cont i{
     font-size: 30px;   
     padding-left: 1rem;
-    padding-right: 1rem;    
-}
-
-
-
-.function{
-    
+    padding-right: rem;    
 }
 
 .media .fa-angle-up, .chat .fa-angle-up{
     font-size: 16px;
-    padding-left: 0;
+    padding-left: 1rem;
 }
 
 h4{
     margin: 0;
-    display: inline;
+    display: block;
 }
 /* #endregion Footer */

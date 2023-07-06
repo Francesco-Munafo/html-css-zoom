@@ -1,5 +1,101 @@
+/* #region Common */
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+main{
+    height: calc(100% - 175px);
+     background-color: var(--zm-main); 
+    padding-top: 1rem ;
+}
+/* #endregion Common */
+
+/* #region Utilities */
+:root{
+    --zm-main: rgba(0, 0, 0, 1);
+    --zm-foot: rgba(34, 34, 34, 1);
+    --zm-success: rgba(75, 200, 0, 1);
+    --zm-username: rgba(74, 74, 74, 0.3);
+    --zm-utils: rgba(74, 74, 74, 1);
+    --zm-alert: rgba(224, 39, 37, 1);
+    --zm-font-light: rgba(255, 255, 255, 1);
+}
+
+.container{
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+
+.sp-bt{
+    justify-content: space-between;
+}
+
+.col{
+    width: 100%;
+}
+
+.users>img{
+margin-bottom: 0.5rem;
+width: 244px ;
+}
+/* #endregion Utilities */
+
+/* #region Debug */
+    .col .debug{
+        width: 100px;
+        height: 80px;
+        background-color: yellow;
+    }
+/* #endregion Debug */
+/* BONUS */
+.utils a:hover {
+    text-decoration: underline;
+    background-color: rgb(37, 37, 37);
+}
+
+/* #region Header */
+header{
+    height: 75px;
+    background-color: var(--zm-main);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.utils{
+    display: inline;
+    width: auto;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+
+.utils a{
+    text-decoration: none;
+    background-color: var(--zm-utils);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    color: var(--zm-font-light);
+}
+
+
+/* #endregion Header */
+/* #region Main */
+
+/* #endregion Main */
+
+/* #region Footer */
+footer{
+    height: 100px;
+    background-color: var(--zm-foot);
+}
+/* #endregion Footer */

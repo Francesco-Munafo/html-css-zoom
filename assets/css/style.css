@@ -10,9 +10,7 @@ body{
 }
 
 main {
-    height: calc(100% - 175px);
     background-color: var(--zm-main);
-    padding-top: 1rem;
 }
 
 /* #endregion Common */
@@ -29,14 +27,18 @@ main {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 80%;
     height: calc(100vh - 175px);
     margin: auto;
     overflow-y: auto;
+    padding-top: 2rem;
 }
 
 .sp-bt {
     justify-content: space-between;
+}
+.fl-end{
+    justify-content: flex-end;
 }
 
 .flex-wrap{
@@ -59,6 +61,21 @@ main {
 .gap{
     gap: 1.5rem;
 }
+
+.gap-25{
+    gap: 0.25rem;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.pl-1{
+    padding-left:1rem;
+}
 /* #endregion Utilities */
 
 /* #region Debug */
@@ -75,6 +92,11 @@ main {
     background-color: rgb(37, 37, 37);
 }
 
+button:hover{
+    text-decoration: underline;
+    background-color: rgb(134, 0, 0);
+}
+
 /* #region Header */
 header {
     height: 75px;
@@ -85,14 +107,9 @@ header {
 }
 
 .utils {
-    display: inline;
     width: auto;
-    padding: 0.25rem 0.5rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-
 }
 
 .utils a {
@@ -101,6 +118,7 @@ header {
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
     color: var(--zm-font-light);
+    margin-left: 0.25rem;
 }
 
 
@@ -130,27 +148,37 @@ footer {
 
 .foot-icon-cont{
     max-width: 100%;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 .row{
     align-items: center;
-    color: var(--zm-font-light);
-        
+    color: var(--zm-font-light);        
 }
 
-.foot-icon-cont i{
-    font-size: 30px;   
-    padding-left: 1rem;
-    padding-right: rem;    
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
 }
 
-.media .fa-angle-up, .chat .fa-angle-up{
-    font-size: 16px;
-    padding-left: 1rem;
+.icon>i{
+    font-size: 30px;
 }
 
-h4{
-    margin: 0;
-    display: block;
+.share i{
+    color: var(--zm-success);
 }
+
+button{
+ padding: 0.75rem 0.5rem;
+ margin: 1rem;
+ background-color: var(--zm-alert);
+ border: none;
+ border-radius: 10px;
+ color: var(--zm-font-light);
+}
+
+
+
 /* #endregion Footer */
